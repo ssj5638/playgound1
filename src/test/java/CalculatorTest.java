@@ -13,6 +13,13 @@ class CalculatorTest {
     }
 
     @Test
+    public void 계산기() { // 우선순위 없이 앞에서부터 순차적 계산
+        String value = "2 + 3 * 4 / 2";
+        int result = cal.stringCalculator(value);
+        assertEquals(result, 10);
+    }
+
+    @Test
     public void 덧셈() {
         assertEquals(cal.add(3, 7), 10);
     }
